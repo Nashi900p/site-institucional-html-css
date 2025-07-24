@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NovaSynTech | Início</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaSynTech</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <img src="assets/imagens/logo.png" alt="Logo NovaSynTech" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <img src="assets/imagens/logo.png" alt="NovaSynTech Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <img src="assets/imagens/banner.png" alt="Banner institucional" class="banner-img" />
-      <div class="chamada">
-        <h1>Transformamos ideias em soluções digitais</h1>
-        <p>Sites modernos, acessíveis e com identidade.</p>
-      </div>
+  <main class="container">
+    <section class="intro">
+      <h1>Soluções digitais sob medida</h1>
+      <p>Sites modernos, rápidos, funcionais e com identidade única.</p>
+      <img src="assets/imagens/banner.png" alt="Equipe trabalhando no escritório" class="banner">
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2>Quem somos</h2>
+      <p>A NovaSynTech é uma empresa fictícia dedicada a criar soluções web de alto impacto. Nosso foco é unir design limpo, performance e identidade visual em sites institucionais, landing pages e aplicações leves.</p>
+      <img src="assets/imagens/equipe.png" alt="Equipe NovaSynTech" class="equipe">
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Fale conosco</h2>
+      <p>Preencha o formulário e retornaremos em breve.</p>
+      <form>
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+
+    <section class="mapa">
+      <h2>Localização</h2>
+      <img src="assets/imagens/mapa.png" alt="Mapa da localização da empresa">
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 NovaSynTech. Todos os direitos reservados.</p>
+    <p>&copy; 2025 <strong>NovaSynTech</strong>. Todos os direitos reservados.</p>
   </footer>
 </body>
+
 </html>
